@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="My Phone"
+        android:textStyle="bold"
+        android:textSize="24dp"/>
+    
+    <ImageView
+        android:id="@+id/phone_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/txt_title"
+        android:src="@drawable/samsung"
+        />
+
+    <TextView
+        android:id="@+id/product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_img"
+        android:text="@string/phone_name"
+        android:textSize="24dp"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$109.99"
+        android:textSize="24dp"
+        android:layout_below="@id/phone_img"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:id="@+id/phone_desription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/ic_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_phone_android_24"
+        android:layout_below="@id/phone_desription"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="64 GB | 3 GB"
+        android:layout_toRightOf="@id/ic_memory"
+        android:layout_alignTop="@id/ic_memory"
+        android:layout_alignBottom="@id/ic_memory"
+        />
+</RelativeLayout>
